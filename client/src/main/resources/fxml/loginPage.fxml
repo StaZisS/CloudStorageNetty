@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.pageController.LoginPageController"
+      prefWidth="400" prefHeight="400" spacing="10">
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Registration" onAction="#switchToRegistration"/>
+        <Button text="Login" disable="true"/>
+        <Button text="Main Page" onAction="#switchToMainPage"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label prefWidth="100" prefHeight="30" text="Username:"/>
+        <TextField fx:id="usernameField" prefWidth="200" prefHeight="30"/>
+    </HBox>
+    <HBox spacing="10">
+        <Label prefWidth="100" prefHeight="30" text="Password:"/>
+        <PasswordField fx:id="passwordField" prefWidth="200" prefHeight="30"/>
+    </HBox>
+
+    <HBox alignment="CENTER">
+        <Button prefWidth="150" prefHeight="30" text="Login" onAction="#loginUser"/>
+    </HBox>
+
+    <HBox alignment="CENTER">
+        <Button prefWidth="150" prefHeight="30" text="Logout" onAction="#logout"/>
+    </HBox>
+</VBox>

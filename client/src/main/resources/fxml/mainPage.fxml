@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.pageController.MainPageController"
+      prefWidth="400" prefHeight="400" spacing="10">
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Registration" onAction="#switchToRegistration"/>
+        <Button text="Login" onAction="#switchToLogin"/>
+        <Button text="Main Page" disable="true"/>
+    </HBox>
+
+    <TreeView fx:id="treeView" prefWidth="400" prefHeight="200" editable="true">
+    </TreeView>
+
+    <HBox alignment="CENTER">
+        <Button prefWidth="150" prefHeight="30" text="Logout" onAction="#logout"/>
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="10">
+        <Button prefWidth="150" prefHeight="30" text="Send file" onAction="#sendFile"/>
+        <Button prefWidth="150" prefHeight="30" text="Download file" onAction="#downloadFile"/>
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="10">
+        <Button prefWidth="150" prefHeight="30" text="Refresh page" onAction="#refreshPage"/>
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="10">
+        <Button prefWidth="150" prefHeight="30" text="Move file" onAction="#moveFile"/>
+        <Button prefWidth="150" prefHeight="30" text="Copy file" onAction="#copyFile"/>
+    </HBox>
+
+</VBox>
